@@ -1,8 +1,9 @@
-import { XMLAttribute, XMLChild, XMLElement } from 'xml-decorators';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { XMLAttribute, XMLChild, XMLElement } from 'xml-serializer-ts';
 
 const HOBBY_NS = 'h';
 
-class Hobby {
+export class Hobby {
 
   @XMLAttribute({ namespace: HOBBY_NS })
   private name: string;
@@ -15,7 +16,7 @@ const PERSON_ROOT = 'person';
 const PERSON_NS = 'ps';
 
 @XMLElement({ root: PERSON_ROOT }) // optional
-class Person {
+export class Person {
 
   @XMLAttribute({ namespace: PERSON_NS })
   private firstname: string;
