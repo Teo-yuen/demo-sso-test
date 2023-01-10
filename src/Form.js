@@ -1,6 +1,5 @@
+import { Hobby } from "models/AuthnRequest";
 import React from "react";
-import { xml } from "xml-serializer-ts";
-import { Hobby, Person } from "./models/AuthnRequest";
 
 class FluidInput extends React.Component {
   constructor(props) {
@@ -69,12 +68,12 @@ export default function LoginContainer() {
       new Hobby('listening to Music', 'loves to listen to rock music'),
       new Hobby('travelling', 'loves to travel around the world'),
     ];
-    const pets = ['dog', 'cat'];
-    const bob = new Person('Bob', 'Mad', 29, hobbies, pets);
+    // const pets = ['dog', 'cat'];
+    // const bob = new Person('Bob', 'Mad', 29, hobbies, pets);
 
-    const bobXml = xml.serialize(bob);
+    // const bobXml = xml.serialize(bob);
 
-    console.log(bobXml);
+    // console.log(bobXml);
 
   }
 

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { XMLAttribute, XMLChild, XMLElement } from 'xml-serializer-ts';
+import { XMLAttribute, XMLChild, XMLElement } from 'xml-decorators';
 
 const HOBBY_NS = 'h';
 
